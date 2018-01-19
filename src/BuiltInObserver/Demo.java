@@ -4,7 +4,7 @@ package BuiltInObserver;
  * Created by navid on 1/19/18.
  */
 public class Demo {
-    
+
     public static void main(String[] args) {
         Publisher forbes = new Publisher(1,
                 "How to get rich?",

@@ -9,7 +9,7 @@
 
     2- run the 'Demo.java` to see it's result
 
-    3- You can also find an image of the design pattern structure inside each design pattern package
+    3- You can also find an image of the design pattern structure inside each design pattern's package
   ```
 
  ### Author : 

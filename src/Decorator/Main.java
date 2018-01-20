@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Cost: " + br.cost());
         System.out.println();
 
-        RedDotScope rds = new RedDotScope(br);  // decorating gun with red dot scope    
+        RedDotScope rds = new RedDotScope(br);  // decorating gun with red dot scope
         BlackOpsSuppressor bops = new BlackOpsSuppressor(rds); // decorating the red dot scope Bereta
         System.out.println("Bereta + Red-Dot + BlackOpsSuppressor:");
         System.out.println("Aiming: " + bops.aim());

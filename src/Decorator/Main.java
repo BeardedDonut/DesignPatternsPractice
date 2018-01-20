@@ -23,5 +23,10 @@ public class Main {
         System.out.println("Shooting: " + bops.shoot());
         System.out.println("Cost: " + bops.cost());
         System.out.println();
+
+        /*
+            You can also Define different Guns and then decorate them with
+            any accessory yo want...
+         */
     }
 }

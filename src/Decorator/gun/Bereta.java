@@ -5,6 +5,10 @@ import Decorator.abstractGun.Gun;
 /**
  * Created by navid on 1/20/18.
  */
+
+/*
+    An instance of gun which we are going to decorate.
+ */
 public class Bereta extends Gun {
     @Override
     public String shoot() {

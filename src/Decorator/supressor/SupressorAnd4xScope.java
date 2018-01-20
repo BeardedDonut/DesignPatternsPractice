@@ -4,7 +4,9 @@ import Decorator.abstractGun.Gun;
 
 /**
  * Created by navid on 1/20/18.
- * This suppressor is kinda wierd
+ * This suppressor is kinda wierd cause it does both
+ * suppressing and also adds a 4x scope... so its just
+ * for the case of demonstration don't take serious!
  */
 
 public class SupressorAnd4xScope extends Gun {

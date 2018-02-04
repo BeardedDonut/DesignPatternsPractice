@@ -5,9 +5,10 @@ import Bridge.accelerator.AccelerationMechanism;
 /**
  * Created by navid on 2/3/18.
  */
-public class Submarine extends Vehicle {
+public class Spaceship extends Vehicle {
 
-    public Submarine(AccelerationMechanism myAccelerator) {
+    Spaceship(AccelerationMechanism myAccelerator) {
         super(myAccelerator);
     }
+
 }

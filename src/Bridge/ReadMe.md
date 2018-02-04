@@ -18,7 +18,7 @@
         2- using Bridge Design pattern.
     
         1- We can use inheritance but it could end up too much complicated.
-        if we want every vehicle with every accelerator we would have classes as below 
+        If we want every vehicle with every accelerator we would have classes as below 
         (although it might sound a bit stupid):
             - SubMarineWithPropeller, 
             - SubMarineWithJet, 
@@ -28,5 +28,17 @@
         Now all of sudden we decided to add a new vehicle like a Car then our classes would grow exponentially.
         So as you can see this is not a proper solution.
         
-        TODO: explain the benefits of using bridge.
+        2- We can also benefit from the bridge design pattern.
+        If we use bridge design we would have:
+            - Jet Class,
+            - Propeller Class,
+            - Spaceship Class,
+            - Submarine Class
+        And we use composition to achieve any combination of Accelerator and Vehicle and if any other vehicle or 
+        accelerator add up to this collection it could be done in runtime and also our classes would not increase 
+        exponentially. In other words we make a bridge between Acceleration Mechanism and Vehicles
     
+    ## NOTE: 
+        If at some point we add another vehicle such as air-craft and we only need to add the AirCraft class to 
+        collection of classes if we are using bridge but without using brdige we need to add two different classes 
+        (1) Aircraft with Jet and (2) Aircraft with Propeller.

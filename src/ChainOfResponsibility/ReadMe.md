@@ -1,4 +1,4 @@
-# Bridge Design Pattern:
+# Chain of Responsibility Design Pattern:
     
    ## Intent:
    TODO:

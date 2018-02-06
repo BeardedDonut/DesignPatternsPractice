@@ -1,6 +1,6 @@
 package ChainOfResponsibility.handlers;
 
-import ChainOfResponsibility.AddRequest;
+import ChainOfResponsibility.infrastructure.AddRequest;
 
 /**
  * Created by navid on 2/5/18.

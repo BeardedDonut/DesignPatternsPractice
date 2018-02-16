@@ -8,7 +8,7 @@
    - Add a wrapper and delegation to protect the real component from undue complexity.
 
    ## UML Diagram
-   ![Image](https://github.com/navid9675/DesignPatternsPractice/blob/Proxy/src/Proxy/UML-Diagram.png "Proxy UML"
+   ![Image][uml-diagram]
 
    ### Note:
    
@@ -35,3 +35,4 @@
    instantiate a connection to the server and fetches the information and also it can cache the data so we won't 
    make another call to the server again and save some time.
    
+[uml-diagram]: https://github.com/navid9675/DesignPatternsPractice/blob/Proxy/src/Proxy/UML-Diagram.png

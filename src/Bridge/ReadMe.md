@@ -4,6 +4,9 @@
    - Decouple an abstraction from its implementation so that the two can vary independently.
    - Publish interface in an inheritance hierarchy, and bury implementation in its own inheritance hierarchy.
    - Beyond encapsulation, to insulation
+   
+   ## UML Diagram
+   ![Image][uml-diagram]
     
    ## Problem:
    In a Fantasy World imagine we have different types of vehicles with different types of accelator.
@@ -44,5 +47,8 @@
     
    ## NOTE: 
    If at some point we add another vehicle such as air-craft and we only need to add the AirCraft class to 
-   collection of classes if we are using bridge but without using brdige we need to add two different classes 
+   collection of classes if we are using bridge but without using bridge we need to add two different classes 
    (1) `Aircraft with Jet` and (2) `Aircraft with Propeller`.
+   
+   
+   [uml-diagram]: https://github.com/navid9675/DesignPatternsPractice/blob/Bridge/src/Bridge/UML-Diagram.png

@@ -1,5 +1,8 @@
 package Adapter;
 
+import Adapter.human.HumanLikeRobot;
+import Adapter.robot.Robot;
+
 /**
  * Created by navid on 1/19/18.
  */

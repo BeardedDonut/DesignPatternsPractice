@@ -1,4 +1,7 @@
-package Adapter;
+package Adapter.human;
+
+import Adapter.human.Human;
+import Adapter.robot.Robot;
 
 /**
  * Created by navid on 1/19/18.

@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.robot;
 
 /**
  * Created by navid on 1/19/18.
@@ -6,7 +6,7 @@ package Adapter;
 public class Robot {
     private String productId;
 
-    Robot(String productId) {
+    public Robot(String productId) {
         this.productId = productId;
     }
 

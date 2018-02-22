@@ -1,4 +1,4 @@
-package Composite;
+package Composite.file;
 
 /**
  * Created by navid on 12/15/17.

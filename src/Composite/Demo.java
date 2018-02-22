@@ -1,10 +1,15 @@
 package Composite;
 
+import Composite.file.Folder;
+import Composite.file.Shortcut;
+import Composite.file.TextFile;
+
 /**
  * Created by navid on 12/15/17.
  */
 public class Demo {
     public static void main(String... args) {
+        // TODO: write a proper read-me file
 
         TextFile textFile1 = new TextFile("text1.txt", "Hello World!");
         TextFile textFile2 = new TextFile("password.txt", "1234qwer");
@@ -29,7 +34,5 @@ public class Demo {
         favourites.add(secretFiles);
 
         favourites.describe(0);
-
-
     }
 }

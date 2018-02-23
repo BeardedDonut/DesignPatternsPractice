@@ -9,7 +9,6 @@ import Composite.file.TextFile;
  */
 public class Demo {
     public static void main(String... args) {
-        // TODO: write a proper read-me file
 
         TextFile textFile1 = new TextFile("text1.txt", "Hello World!");
         TextFile textFile2 = new TextFile("password.txt", "1234qwer");

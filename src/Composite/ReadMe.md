@@ -19,4 +19,4 @@
    ## Solution:
    You have noticed that there is a recursive composition involved in this problem. To tackle this problem we can use `Composite` design pattern. 
    
-[uml-diagram]: hhttps://github.com/navid9675/DesignPatternsPractice/blob/master/src/Composite/UML-Diagram.png
+[uml-diagram]: https://github.com/navid9675/DesignPatternsPractice/blob/master/src/Composite/UML-Diagram.png

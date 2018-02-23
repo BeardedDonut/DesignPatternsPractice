@@ -20,4 +20,4 @@
         - Use **Adapter** design pattern. With this in mind; we need to define a new class called `HumanLikeRobot` which contains a `Robot` as a core and also extends `Human` and map the behaviours of a `Human` to a behaviour of a `Robot`.
    
    
-   [uml-diagram]: https://github.com/navid9675/DesignPatternsPractice/blob/Adapter/src/Adapter/UML-Diagram.png
+   [uml-diagram]: https://github.com/navid9675/DesignPatternsPractice/blob/master/src/Adapter/UML-Diagram.png

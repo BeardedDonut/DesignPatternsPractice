@@ -1,5 +1,9 @@
 package Composite;
 
+import Composite.file.Folder;
+import Composite.file.Shortcut;
+import Composite.file.TextFile;
+
 /**
  * Created by navid on 12/15/17.
  */
@@ -29,7 +33,5 @@ public class Demo {
         favourites.add(secretFiles);
 
         favourites.describe(0);
-
-
     }
 }

@@ -6,6 +6,7 @@ package Proxy.customer;
  * NOTE: Adapter design pattern could be very helpful if the two interface does not match.
  */
 public interface CustomerResource {
-    String request();
-    String getCustomerId();
+    String request(int id) throws InterruptedException;
+
+    int getCustomerId() throws InterruptedException;
 }

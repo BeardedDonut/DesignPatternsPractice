@@ -6,7 +6,11 @@ package Proxy.customer;
 public class ProxyCustomerResource implements CustomerResource {
     private RemoteCustomerResource myCustomerResource;
 
-    ProxyCustomerResource() {
+    // cache
+    private int customerIdCache;
+    private String cachedReport;
+
+    public ProxyCustomerResource() {
         /*
          NOTE:
          We should NOT instantiate the REMOTE-RESOURCE at the constructor
@@ -15,22 +19,33 @@ public class ProxyCustomerResource implements CustomerResource {
     }
 
     @Override
-    public String request() throws InterruptedException {
+    public String request(int id) throws InterruptedException {
 
         if (myCustomerResource == null) {
             this.createConnectionToRemoteServer();
         }
 
-        // We can also provide some caching mechanism to improve the performance overall
-        return myCustomerResource.request();
+        if (cachedReport == null) {
+            this.cachedReport = myCustomerResource.request(id);
+        }
+
+        return cachedReport;
     }
 
     @Override
-    public String getCustomerId() {
-        return null;
+    public int getCustomerId() throws InterruptedException {
+        if (myCustomerResource == null) {
+            this.createConnectionToRemoteServer();
+        }
+
+        if (customerIdCache == 0) {
+            customerIdCache = myCustomerResource.getCustomerId();
+        }
+
+        return customerIdCache;
     }
 
-    public void createConnectionToRemoteServer() {
+    private void createConnectionToRemoteServer() {
         this.myCustomerResource = new RemoteCustomerResource();
     }
 }

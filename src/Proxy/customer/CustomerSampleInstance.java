@@ -13,20 +13,34 @@ import java.util.Random;
  */
 
 public class CustomerSampleInstance {
-    private static int customerId;
+    private static int customerId = 0;
+
+    public static void init() {
+        if (customerId != 0) {
+            customerId = (int) (Math.random() * 100);
+        }
+    }
 
     public static int getCustomerId() {
-        return (int) (Math.random() * 100);
+        if (customerId != 0) {
+            init();
+        }
+
+        return customerId;
     }
 
     public static String reportCustomerTransactions(int customerId) {
+        if (customerId != 0) {
+            init();
+        }
+
         StringBuilder sb = new StringBuilder();
 
-        sb.append("{" +
-                "customerId:" + customerId + "\n" +
-                "sales:" + Math.random() * 100000+ "\n" +
-                "postalCode:" + Math.random() * 1000 + "\n" +
-                "age:" + Math.random() * 60 + "}\n");
+        sb.append("{\n" +
+                "\tcustomerId:" + customerId + "\n" +
+                "\tsales:" + Math.random() * 100000 + "\n" +
+                "\tpostalCode:" + Math.random() * 1000 + "\n" +
+                "\tage:" + Math.random() * 60 + "\n}\n");
 
         return sb.toString();
     }

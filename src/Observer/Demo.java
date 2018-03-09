@@ -1,5 +1,10 @@
 package Observer;
 
+import Observer.subscriber.Observer;
+import Observer.subject.Subject;
+import Observer.subscriber.HexObserver;
+import Observer.subscriber.OctObserver;
+
 /**
  * Created by navid on 12/15/17.
  */
@@ -13,8 +18,8 @@ public class Demo {
         Observer observer1 = new OctObserver(firstSubject);
         Observer observer2 = new HexObserver(firstSubject);
 
-        firstSubject.setState(2);
+        firstSubject.setNumber(2);
 
-        firstSubject.setState(3);
+        firstSubject.setNumber(3);
     }
 }

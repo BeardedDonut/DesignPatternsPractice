@@ -1,4 +1,6 @@
-package Observer;
+package Observer.subscriber;
+
+import Observer.subject.Subject;
 
 /**
  * Created by navid on 12/15/17.

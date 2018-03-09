@@ -1,4 +1,6 @@
-package Observer;
+package Observer.subject;
+
+import Observer.subscriber.Observer;
 
 import java.util.ArrayList;
 
@@ -7,9 +9,9 @@ import java.util.ArrayList;
  */
 public class Subject {
     private ArrayList<Observer> subscribers;
-    private int state;
+    private int number;
 
-    Subject() {
+    public Subject() {
         this.subscribers = new ArrayList<Observer>();
     }
 
@@ -17,12 +19,12 @@ public class Subject {
         subscribers.add(o);
     }
 
-    public int getState() {
-        return state;
+    public int getNumber() {
+        return number;
     }
 
-    public void setState(int value) {
-        this.state = value;
+    public void setNumber(int value) {
+        this.number = value;
         this.notifySubscribers();
     }
 

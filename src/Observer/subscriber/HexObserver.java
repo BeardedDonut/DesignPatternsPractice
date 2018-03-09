@@ -1,4 +1,6 @@
-package Observer;
+package Observer.subscriber;
+
+import Observer.subject.Subject;
 
 /**
  * Created by navid on 12/15/17.
@@ -12,6 +14,6 @@ public class HexObserver extends Observer {
 
     @Override
     public void update() {
-        System.out.println("Hex " + Integer.toHexString(this.subject.getState()));
+        System.out.println("Hex " + Integer.toHexString(this.subject.getNumber()));
     }
 }

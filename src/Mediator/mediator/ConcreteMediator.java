@@ -1,4 +1,7 @@
-package Mediator;
+package Mediator.mediator;
+
+import Mediator.Mediator;
+import Mediator.colleague.Colleague;
 
 import java.util.ArrayList;
 

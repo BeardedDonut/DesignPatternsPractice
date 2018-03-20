@@ -1,4 +1,6 @@
-package Mediator;
+package Mediator.colleague;
+
+import Mediator.mediator.Mediator;
 
 /**
  * Created by navid on 12/14/17.
@@ -13,6 +15,6 @@ public class MobileColleague extends Colleague {
 
     @Override
     public void recevie(String message) {
-        System.out.println("Mobile Colleague:" + name + "\n\tHas received a message:" + message);
+        System.out.println("Mobile colleague:" + name + "\n\tHas received a message:" + message);
     }
 }

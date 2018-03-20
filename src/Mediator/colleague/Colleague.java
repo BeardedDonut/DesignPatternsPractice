@@ -1,4 +1,6 @@
-package Mediator;
+package Mediator.colleague;
+
+import Mediator.mediator.Mediator;
 
 /**
  * Created by navid on 12/14/17.

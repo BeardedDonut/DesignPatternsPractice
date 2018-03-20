@@ -1,5 +1,9 @@
 package Mediator;
 
+import Mediator.colleague.ConcreteColleague;
+import Mediator.colleague.MobileColleague;
+import Mediator.mediator.ConcreteMediator;
+
 /**
  * Created by navid on 12/14/17.
  */

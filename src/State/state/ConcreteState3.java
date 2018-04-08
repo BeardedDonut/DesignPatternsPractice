@@ -1,4 +1,6 @@
-package State;
+package State.state;
+
+import State.State;
 
 /**
  * Created by navid on 12/15/17.
@@ -16,7 +18,7 @@ public class ConcreteState3 extends State {
     }
 
     @Override
-    public void goNext(Context context) {
+    public void goNext(State.Context context) {
         context.setState(ConcreteState1.getInstance());
     }
 

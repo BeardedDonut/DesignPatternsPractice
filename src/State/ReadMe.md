@@ -1,4 +1,4 @@
-# Chain of Responsibility Design Pattern:
+# State Design Pattern:
     
    ## Intent:
    - Gives object to translate between different internal states dynamically

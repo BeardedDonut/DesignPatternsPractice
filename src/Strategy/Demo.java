@@ -1,5 +1,10 @@
 package Strategy;
 
+import Strategy.context.Context;
+import Strategy.search.BestFirstSearch;
+import Strategy.search.DepthFirstSearch;
+import Strategy.search.RandomSearch;
+
 /**
  * Created by navid on 12/15/17.
  */
